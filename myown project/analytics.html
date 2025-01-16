@@ -1,0 +1,168 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+        <h1>Task Prioritising Application</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Tasks</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    
+    <div class="main-content">
+    
+      <div class="top-nav">
+        <input type="text" placeholder="Search...">
+      </div>
+
+  
+      <div class="summary">
+        <div class="circular-dashboard">
+          <div class="circle" id="circle1"></div>
+          <p>Total Tasks: <b>120</b></p>
+        </div>
+        <div class="circular-dashboard">
+          <div class="circle" id="circle2"></div>
+          <p>Completed Tasks: <b>85%</b></p>
+        </div>
+        <div class="circular-dashboard">
+          <div class="circle" id="circle3"></div>
+          <p>Response Rate: <b>90%</b></p>
+        </div>
+      </div> --> 
+
+      <!-- Progress Section -->
+     <!-- <div class="progress-section">
+        <h3>Daily Progress</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Task Prioritization App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      width: 100%; /* Full width */
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .header ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .header ul li a.active {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <header class="header">
+        <h1>Task Prioritising Application</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Tasks</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navigation -->
+      <div class="top-nav">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <!-- Summary Section -->
+      <div class="summary">
+        <!-- Circular Dashboard with Inline Styles -->
+        <div class="circular-dashboard" style="text-align: center; margin: 20px; flex: 1;">
+          <div class="circle" id="circle1" style="background: conic-gradient(#ace7ac 0% 100%); width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; position: relative;">
+            <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: bold; font-size: 18px; color: #333;">120</p>
+          </div>
+          <p>Total Tasks: <b>120</b></p>
+        </div>
+
+        <div class="circular-dashboard" style="text-align: center; margin: 20px; flex: 1;">
+          <div class="circle" id="circle2" style="background: conic-gradient(#dabd93 0% 85%, #ffffff 85% 100%); width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; position: relative;">
+            <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: bold; font-size: 18px; color: #333;">85%</p>
+          </div>
+          <p>Completed Tasks: <b>85%</b></p>
+        </div>
+
+        <div class="circular-dashboard" style="text-align: center; margin: 20px; flex: 1;">
+          <div class="circle" id="circle3" style="background: conic-gradient(#80b4de 0% 90%, #ffffff 90% 100%); width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; position: relative;">
+            <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: bold; font-size: 18px; color: #333;">90%</p>
+          </div>
+          <p>Response Rate: <b>90%</b></p>
+        </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="progress-section">
+        <h3>Daily Progress</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Task Prioritization App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

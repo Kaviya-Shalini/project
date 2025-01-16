@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li class="active">Tasks</a></li>
+        <li>Analytics</li>
+        <li>Messages</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navigation -->
+      <div class="top-nav">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <!-- Summary Section -->
+      <div class="summary">
+        <div class="circular-dashboard">
+          <div class="circle" id="circle1"></div>
+          <p>Total Tasks: <b>120</b></p>
+        </div>
+        <div class="circular-dashboard">
+          <div class="circle" id="circle2"></div>
+          <p>Completed Tasks: <b>85%</b></p>
+        </div>
+        <div class="circular-dashboard">
+          <div class="circle" id="circle3"></div>
+          <p>Response Rate: <b>90%</b></p>
+        </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="progress-section">
+        <h3>Daily Progress</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

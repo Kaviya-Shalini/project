@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Prioritization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Task Prioritization Application</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Tasks</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="task-form">
+      <h2>Prioritize Your Day</h2>
+      <form id="taskForm">
+        <label for="dayType">Day Type:</label>
+        <select name="dayType" id="dayType" required>
+          <option value="working">Working Day</option>
+          <option value="holiday">Holiday</option>
+          <option value="personal">Personal Work</option>
+        </select>
+
+        <label for="primaryTask">Primary Task:</label>
+        <input type="text" name="primaryTask" id="primaryTask" placeholder="Enter primary task" required>
+
+        <label for="secondaryTask">Secondary Task:</label>
+        <input type="text" name="secondaryTask" id="secondaryTask" placeholder="Enter secondary task">
+
+        <label for="importantTask">Important Task:</label>
+        <input type="text" name="importantTask" id="importantTask" placeholder="Enter important task">
+
+        <button type="submit" class="btn">Save Tasks</button>
+      </form>
+    </section>
+
+    <section class="alerts">
+      <h2>Alerts</h2>
+      <p id="alertMessage">You have no pending alerts.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Task Prioritization App</p>
+  </footer>
+</body>
+</html>
